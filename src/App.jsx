@@ -276,9 +276,9 @@ function App() {
         <section id="benefits" className="px-5">
           <div className="container mx-auto">
             <h1 className="text-4xl ml-5 my-5 underline">Benefits:</h1>
-            <ul className="sm:flex sm:justify-center flex-wrap text-white ">
-              <li className="basis-1/3 rounded-tl-lg sm:rounded-none rounded-tr-lg bg-red-500  p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
-                <div className=" p-5 mx-5 text-center bg-red-800 rounded-full">
+            <ul className="md:flex md:justify-center flex-wrap text-white ">
+              <li className="basis-1/3 rounded-tl-lg sm:rounded-tr-none rounded-tr-lg bg-red-500  p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
+                <div className="p-5 mx-5 text-center bg-red-800 rounded-full">
                   <i className="fa-solid text-5xl text-red-500 rounded-full text-center fa-recycle"></i>
                 </div>
                 <div className="">
@@ -301,7 +301,7 @@ function App() {
                   </p>
                 </div>
               </li>
-              <li className="basis-1/3 rounded-tr-lg bg-green-500 p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
+              <li className="basis-1/3 md:rounded-tr-lg bg-green-500 p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
                 <div className=" p-5 mx-5 bg-green-800 rounded-full text-center">
                   <i className="fa-solid text-5xl text-green-500 text-center fa-seedling"></i>
                 </div>
@@ -313,7 +313,7 @@ function App() {
                   </p>
                 </div>
               </li>
-              <li className="basis-1/3 sm:rounded-bl-lg bg-yellow-500 p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
+              <li className="basis-1/3 md:rounded-bl-lg bg-yellow-500 p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
                 <div className=" p-5 mx-5 bg-yellow-800 rounded-full text-center">
                   <i className="fa-solid text-5xl text-yellow-500  fa-house"></i>
                 </div>
@@ -337,7 +337,7 @@ function App() {
                   </p>
                 </div>
               </li>
-              <li className="basis-1/3 rounded-bl-lg sm:rounded-none rounded-br-lg bg-pink-500 p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
+              <li className="basis-1/3 rounded-bl-lg md:rounded-bl-none rounded-br-lg bg-pink-500 p-5 flex flex-col gap-5 sm:flex-row sm:items-center">
                 <div className="px-7 py-5 mx-5 text-center bg-pink-800 rounded-full">
                   <i className="fa-solid block text-5xl text-pink-500  fa-hand-fist"></i>
                 </div>
@@ -352,9 +352,48 @@ function App() {
             </ul>
           </div>
         </section>
+
+        <section className="container mx-auto px-5 sm:px-0">
+          <h1 className="text-3xl text-center">
+            All the category of devices that we have:
+          </h1>
+          <div>
+            <ul className="flex flex-wrap sm:flex-row flex-col justify-center text-center  text-6xl gap-5 ">
+              <li className="basis-1/3 border-4 p-4 dark:border-white border-slate-900 hover:">
+                <div>
+                  <i class="fa-solid fa-laptop"></i>
+                </div>
+                <h3>Laptop</h3>
+              </li>
+              <li className="basis-1/3 border-4 p-4 dark:border-white border-slate-900">
+                <div>
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3>SmartPhones</h3>
+              </li>
+              <li className="basis-1/3 border-4 p-4 dark:border-white border-slate-900">
+                <div>
+                  <i class="fa-solid fa-headphones"></i>
+                </div>
+                <h3>HeadPhones</h3>
+              </li>
+              <li className="basis-1/3 border-4 p-4 dark:border-white border-slate-900">
+                <div>
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3>Watches</h3>
+              </li>
+
+              <li className="basis-1/3 border-4 p-4 dark:border-white border-slate-900">
+                <h3>And Many More...</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section id="products" className="">
           <div className="text-center">
-            <h1 className="text-4xl">Our Kinds Of Devices</h1>
+            <h1 className="text-4xl">Our Best-Selled Products</h1>
             <p className="text-xl">One of the truly best</p>
           </div>
           <div className="container mx-auto">
