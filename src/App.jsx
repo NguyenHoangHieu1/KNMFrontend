@@ -187,7 +187,7 @@ function App() {
           </div>
         </div>
       </Backdrop>
-      <header className=" fixed top-0 w-full backdrop-blur-sm flex items-center justify-between text-slate-200 py-5 px-5 bg-gray-900/70 z-50">
+      <header className=" fixed top-0 w-full backdrop-blur-sm flex items-center justify-between text-slate-200 py-5 px-5 dark:bg-gray-800/70 bg-gray-900/70 z-50">
         <div className="cursor-pointer">
           <img src={logo} className="rounded-full w-14" alt="" />
         </div>
