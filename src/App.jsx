@@ -29,6 +29,8 @@ import review2 from "./assets/review2.jpg"
 import review3 from "./assets/review3.jpg"
 import review5 from "./assets/review5.jpg"
 import logo from "./assets/logo.png"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const reviews = [
   {
@@ -67,6 +69,12 @@ const reviews = [
 
 function App() {
   const [theme, setTheme] = useState("light")
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    })
+  }, [])
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark")
@@ -256,7 +264,11 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="about-us" className=" container mx-auto px-5 ">
+        <section
+          data-aos="fade-up"
+          id="about-us"
+          className=" container mx-auto px-5 "
+        >
           <h1 className="text-4xl ml-5 my-5 underline">About Us:</h1>
           <div className="sm:flex sm:items-center">
             <p className="basis-1/2 text-xl">
@@ -273,7 +285,7 @@ function App() {
             />
           </div>
         </section>
-        <section id="benefits" className="px-5">
+        <section data-aos="fade-up" id="benefits" className="px-5">
           <div className="container mx-auto">
             <h1 className="text-4xl ml-5 my-5 underline">Benefits:</h1>
             <ul className="md:flex md:justify-center flex-wrap text-white ">
@@ -353,7 +365,7 @@ function App() {
           </div>
         </section>
 
-        <section className="container mx-auto px-5 sm:px-0">
+        <section data-aos="fade-up" className="container mx-auto px-5 sm:px-0">
           <h1 className="text-3xl text-center">
             All the category of devices that we have:
           </h1>
@@ -383,15 +395,13 @@ function App() {
                 </div>
                 <h3>Watches</h3>
               </li>
-
               <li className="basis-1/3 border-4 p-4 dark:border-white border-slate-900">
                 <h3>And Many More...</h3>
               </li>
             </ul>
           </div>
         </section>
-
-        <section id="products" className="">
+        <section data-aos="fade-up" id="products" className="">
           <div className="text-center">
             <h1 className="text-4xl">Our Best-Selled Products</h1>
             <p className="text-xl">One of the truly best</p>
@@ -488,7 +498,10 @@ function App() {
           </div>
         </section>
         <section className="container mx-auto px-5  ">
-          <article className="flex flex-col-reverse sm:flex-row gap-5 items-center ">
+          <article
+            data-aos="fade-up"
+            className="flex flex-col-reverse sm:flex-row gap-5 items-center "
+          >
             <div className="basis-1/2">
               <img
                 className="pt-20 rounded-full aspect-square"
@@ -505,7 +518,7 @@ function App() {
               </p>
             </div>
           </article>
-          <article className="sm:flex gap-5 items-center  ">
+          <article data-aos="fade-up" className="sm:flex gap-5 items-center  ">
             <div className="basis-1/2 pt-20">
               <h5 className="text-3xl font-bold">The Operating System:</h5>
               <h1 className="text-4xl font-bold">MinOs</h1>
@@ -524,7 +537,10 @@ function App() {
               </div>
             </div>
           </article>
-          <article className="flex flex-col-reverse sm:flex-row gap-5 items-center ">
+          <article
+            data-aos="fade-up"
+            className="flex flex-col-reverse sm:flex-row gap-5 items-center "
+          >
             <div className="basis-1/2">
               <img
                 className="pt-20 rounded-full aspect-square"
@@ -546,6 +562,7 @@ function App() {
           </article>
         </section>
         <section
+          data-aos="fade-up"
           id="reviews"
           className="container relative mx-auto flex flex-col gap-5 "
         >
@@ -571,6 +588,7 @@ function App() {
           <ul className="flex justify-center gap-5">{reviewEls}</ul>
         </section>
         <section
+          data-aos="fade-up"
           id="contact"
           className="container mx-auto py-20 px-5 flex sm:flex-row flex-col gap-5 sm:justify-between sm:items-center"
         >
@@ -636,7 +654,7 @@ function App() {
               Contact us to get the furthest notification, discounts and many
               more interesting events happening all in GreenStar
             </p>
-            <ul className="flex sm:justify-start justify-center gap-5 text-4xl">
+            <ul className="flex  justify-center gap-5 text-4xl">
               <li>
                 <a href="">
                   <i className="fa-brands fa-facebook hover:text-blue-700"></i>
